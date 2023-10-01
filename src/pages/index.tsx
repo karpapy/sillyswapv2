@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import createGlobe from "cobe";
 
 export default function Home() {
-  const canvasRef = useRef<HTMLCanvasElement | undefined>();
+  const canvasRef: any = useRef();
   useEffect(() => {
     if (!canvasRef.current) return;
 
@@ -62,7 +62,7 @@ export default function Home() {
         </Heading>
         <Flex flexWrap={"wrap"}>
           <Link
-            href="0x05e2BC8601758EcA0eaa47Ef9b908e88ff07927E"
+            href="https://basescan.org/address/0x05e2bc8601758eca0eaa47ef9b908e88ff07927e#code"
             border="6px solid black"
             m={1}
             pb={4}
@@ -74,7 +74,7 @@ export default function Home() {
             </Heading>
           </Link>
           <Link
-            href="0x32e219E92063BB6c2E473f5E718d3Ba6Fada4a44"
+            href="https://basescan.org/address/0x32e219e92063bb6c2e473f5e718d3ba6fada4a44"
             border="6px solid black"
             m={1}
             pb={4}
